@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    var cards : [Card] =  cardData
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ScrollView(.horizontal, showsIndicators: false, content: {
+            HStack{
+                ForEach(cards){ item in
+                    CardView(card: item)
+                }
+            }.padding()
+        })
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(cards: cardData).previewDevice("iPhone 11 Pro")
     }
 }

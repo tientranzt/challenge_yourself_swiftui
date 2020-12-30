@@ -7,19 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF392D2E259B78AF00F59633 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF392D2D259B78AF00F59633 /* CardModel.swift */; };
+		FF392D31259B79DD00F59633 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF392D30259B79DD00F59633 /* CardData.swift */; };
+		FF392D34259B817800F59633 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF392D33259B817800F59633 /* sound-chime.mp3 */; };
+		FF392D37259B818C00F59633 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF392D36259B818C00F59633 /* PlaySound.swift */; };
+		FF392D3E259CC63E00F59633 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF392D3D259CC63E00F59633 /* Stickers.xcassets */; };
+		FF392D42259CC63F00F59633 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF392D3B259CC63B00F59633 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FF8CB44E2598BC830076300A /* challenge_yourselfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CB44D2598BC830076300A /* challenge_yourselfApp.swift */; };
 		FF8CB4502598BC830076300A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CB44F2598BC830076300A /* ContentView.swift */; };
 		FF8CB4522598BC860076300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8CB4512598BC860076300A /* Assets.xcassets */; };
 		FF8CB4552598BC860076300A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8CB4542598BC860076300A /* Preview Assets.xcassets */; };
+		FF8CB45E259A1E540076300A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CB45D259A1E530076300A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF392D40259CC63F00F59633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8CB4422598BC830076300A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF392D3A259CC63B00F59633;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF392D46259CC63F00F59633 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF392D42259CC63F00F59633 /* Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FF392D2D259B78AF00F59633 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		FF392D30259B79DD00F59633 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		FF392D33259B817800F59633 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
+		FF392D36259B818C00F59633 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		FF392D3B259CC63B00F59633 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF392D3D259CC63E00F59633 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		FF392D3F259CC63F00F59633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8CB44A2598BC830076300A /* challenge_yourself.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challenge_yourself.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8CB44D2598BC830076300A /* challenge_yourselfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_yourselfApp.swift; sourceTree = "<group>"; };
 		FF8CB44F2598BC830076300A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF8CB4512598BC860076300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF8CB4542598BC860076300A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF8CB4562598BC860076300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8CB45D259A1E530076300A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,10 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF392D3C259CC63B00F59633 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				FF392D3D259CC63E00F59633 /* Stickers.xcassets */,
+				FF392D3F259CC63F00F59633 /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 		FF8CB4412598BC830076300A = {
 			isa = PBXGroup;
 			children = (
 				FF8CB44C2598BC830076300A /* challenge_yourself */,
+				FF392D3C259CC63B00F59633 /* Stickers */,
 				FF8CB44B2598BC830076300A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8CB44A2598BC830076300A /* challenge_yourself.app */,
+				FF392D3B259CC63B00F59633 /* Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +102,16 @@
 		FF8CB44C2598BC830076300A /* challenge_yourself */ = {
 			isa = PBXGroup;
 			children = (
+				FF392D33259B817800F59633 /* sound-chime.mp3 */,
 				FF8CB44D2598BC830076300A /* challenge_yourselfApp.swift */,
 				FF8CB44F2598BC830076300A /* ContentView.swift */,
+				FF8CB45D259A1E530076300A /* CardView.swift */,
 				FF8CB4512598BC860076300A /* Assets.xcassets */,
 				FF8CB4562598BC860076300A /* Info.plist */,
 				FF8CB4532598BC860076300A /* Preview Content */,
+				FF392D2D259B78AF00F59633 /* CardModel.swift */,
+				FF392D30259B79DD00F59633 /* CardData.swift */,
+				FF392D36259B818C00F59633 /* PlaySound.swift */,
 			);
 			path = challenge_yourself;
 			sourceTree = "<group>";
@@ -72,6 +127,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF392D3A259CC63B00F59633 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF392D43259CC63F00F59633 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				FF392D39259CC63B00F59633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = FF392D3B259CC63B00F59633 /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		FF8CB4492598BC830076300A /* challenge_yourself */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8CB4592598BC860076300A /* Build configuration list for PBXNativeTarget "challenge_yourself" */;
@@ -79,10 +149,12 @@
 				FF8CB4462598BC830076300A /* Sources */,
 				FF8CB4472598BC830076300A /* Frameworks */,
 				FF8CB4482598BC830076300A /* Resources */,
+				FF392D46259CC63F00F59633 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF392D41259CC63F00F59633 /* PBXTargetDependency */,
 			);
 			name = challenge_yourself;
 			productName = challenge_yourself;
@@ -98,6 +170,9 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					FF392D3A259CC63B00F59633 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					FF8CB4492598BC830076300A = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -117,16 +192,26 @@
 			projectRoot = "";
 			targets = (
 				FF8CB4492598BC830076300A /* challenge_yourself */,
+				FF392D3A259CC63B00F59633 /* Stickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF392D39259CC63B00F59633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF392D3E259CC63E00F59633 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF8CB4482598BC830076300A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF8CB4552598BC860076300A /* Preview Assets.xcassets in Resources */,
+				FF392D34259B817800F59633 /* sound-chime.mp3 in Resources */,
 				FF8CB4522598BC860076300A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,14 +223,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF392D31259B79DD00F59633 /* CardData.swift in Sources */,
+				FF392D37259B818C00F59633 /* PlaySound.swift in Sources */,
 				FF8CB4502598BC830076300A /* ContentView.swift in Sources */,
+				FF392D2E259B78AF00F59633 /* CardModel.swift in Sources */,
+				FF8CB45E259A1E540076300A /* CardView.swift in Sources */,
 				FF8CB44E2598BC830076300A /* challenge_yourselfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF392D41259CC63F00F59633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF392D3A259CC63B00F59633 /* Stickers */;
+			targetProxy = FF392D40259CC63F00F59633 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FF392D44259CC63F00F59633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7P7VH7LX5;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tientranzt.github.com.challenge-yourself.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF392D45259CC63F00F59633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7P7VH7LX5;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tientranzt.github.com.challenge-yourself.Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FF8CB4572598BC860076300A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +436,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF392D43259CC63F00F59633 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF392D44259CC63F00F59633 /* Debug */,
+				FF392D45259CC63F00F59633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF8CB4452598BC830076300A /* Build configuration list for PBXProject "challenge_yourself" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
